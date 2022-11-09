@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height:300px ;background-color: rgb(98, 117, 128); border-top:1px ;border-bottom: 1px; border-color: black; ">
+    <h1>Enter a 3 digit NUMBER</h1>
+    <label for="Number">NUMBER:<input type="text" id="n1"></label><BUtton onclick="arm()">SUBMIT</BUtton><br><br>
+    <hr color="cyan">
+    <h2 id="p2" style="color:rgb(79, 22, 145) ;"></h2>
+    </div>
+
+
+
+    <script>
+        function arm(){
+            var a=parseInt(document.getElementById("n1").value)
+            var b=a
+            var flag,r,add=0;
+            flag=a;
+            var c=parseInt()
+            while(a>0)
+              { r=a%10;
+                add = add + r*r*r ;
+                a= parseInt(a/10);  
+              }
+            if(add==flag)
+            {  
+                document.getElementById("p2").innerHTML=`The given number ${b}  is Armstrong`
+                
+
+
+            }  
+            else{
+                document.getElementById("p2").innerHTML=`The given  is ${b} not Armstrong`
+
+            }
+
+        }
+    </script>
+</body>
+</html>
